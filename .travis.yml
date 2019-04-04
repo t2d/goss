@@ -6,6 +6,11 @@ go:
 go_import_path: github.com/aelsabbahy/goss
 
 sudo: required
+
+os:
+  - linux
+  - windows
+
 dist: trusty
 
 services:
