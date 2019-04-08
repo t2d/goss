@@ -17,9 +17,10 @@ services:
 - docker
 
 before_install:
-- if [[ "$TRAVIS_OS_NAME" == "windows" ]]; then mkdir C:/bin ; fi
-- if [[ "$TRAVIS_OS_NAME" == "windows" ]]; choco install make ; fi
+- choco install make
 - go get -u golang.org/x/lint/golint
+#- if [[ "$TRAVIS_OS_NAME" == "windows" ]]; then mkdir C:/bin ; fi
+#- if [[ "$TRAVIS_OS_NAME" == "windows" ]]; choco install make ; fi
 
 script:
 - make
