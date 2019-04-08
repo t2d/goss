@@ -22,7 +22,7 @@ before_install:
 
 script:
 # TODO(stefan): windows does not currently support test-int-*.
-- if [ "$TRAVIS_OS_NAME" == "windows"]; then make lint test; else make; fi
+- if [ "$TRAVIS_OS_NAME" == "windows" ]; then make lint test; else make; fi
 
 # TODO(stefan): should we update the api key?
 # deploy:
