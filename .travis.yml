@@ -17,13 +17,12 @@ services:
 - docker
 
 before_install:
-- choco install make
+- if [ "$TRAVIS_OS_NAME" == "windows" ]; then choco install make; fi
 - go get -u golang.org/x/lint/golint
-#- if [[ "$TRAVIS_OS_NAME" == "windows" ]]; then mkdir C:/bin ; fi
-#- if [[ "$TRAVIS_OS_NAME" == "windows" ]]; choco install make ; fi
 
 script:
-- make
+# TODO(stefan): windows does not currently support test-int-*.
+- if [ "$TRAVIS_OS_NAME" == "windows"]; then make lint test; else make; fi
 
 # TODO(stefan): should we update the api key?
 # deploy:
