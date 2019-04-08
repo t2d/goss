@@ -36,3 +36,4 @@ deploy:
     - extras/dgoss/dgoss
   on:
     repo: improbable-eng/goss
+    tags: true
