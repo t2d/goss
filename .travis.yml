@@ -37,3 +37,4 @@ deploy:
   on:
     repo: improbable-eng/goss
     tags: true
+    condition: $TRAVIS_OS_NAME = linux
