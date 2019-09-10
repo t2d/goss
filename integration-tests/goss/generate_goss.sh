@@ -34,8 +34,6 @@ goss a "${args[@]}" group $user foobar
 
 goss a "${args[@]}" command "echo 'hi'" foobar
 
-goss a "${args[@]}" dns --timeout 1s --server 8.8.8.8 PTR:8.8.8.8
-
 goss a "${args[@]}" dns --timeout 1s localhost
 
 goss a "${args[@]}" process $package foobar
