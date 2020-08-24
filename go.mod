@@ -23,8 +23,10 @@ require (
 	github.com/onsi/gomega v1.10.4
 	github.com/opencontainers/runc v0.0.0-20161107232042-8779fa57eb4a
 	github.com/patrickmn/go-cache v2.1.0+incompatible
+	github.com/prometheus/client_golang v1.7.1
+	github.com/prometheus/common v0.13.0
 	github.com/stretchr/testify v1.7.0
-	github.com/urfave/cli v0.0.0-20161102131801-d86a009f5e13
+	github.com/urfave/cli v1.22.1
 	golang.org/x/crypto v0.0.0-20220131195533-30dcbda58838 // indirect
 	golang.org/x/net v0.0.0-20220127200216-cd36cc0744dd // indirect
 	golang.org/x/sys v0.0.0-20220204135822-1c1b9b1eba6a // indirect
